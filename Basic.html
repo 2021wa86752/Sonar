@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Basic HTML and JavaScript</title>
+</head>
 <body>
-
-<h2>What Can JavaScript Do?</h2>
-
-<p id="demo">JavaScript can change HTML content.</p>
-
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-
+ 
+  <h1>Welcome to My Page</h1>
+<p id="demo">Click the button to see a message.</p>
+<button onclick="showMessage()">Click Me</button>
+ 
+  <script>
+    function showMessage() {
+      alert("Hello, Umair! This is a JavaScript alert.");
+      document.getElementById("demo").innerText = "You clicked the button!";
+    }
+</script>
+ 
 </body>
 </html>
